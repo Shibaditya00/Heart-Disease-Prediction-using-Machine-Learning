@@ -24,7 +24,6 @@ This project aims to predict the likelihood of heart disease in patients using c
 
 - Python (Pandas, NumPy, Matplotlib, Seaborn)
 - Scikit-learn
-- XGBoost
 - SMOTE (Imbalanced-learn)
 - GridSearchCV
 - Jupyter Notebook
