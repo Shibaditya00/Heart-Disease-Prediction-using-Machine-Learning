@@ -1,0 +1,82 @@
+# 🫀 Heart Disease Prediction using Machine Learning
+
+This project aims to predict the likelihood of heart disease in patients using clinical and lifestyle features. It utilizes various machine learning algorithms and compares their performance using evaluation metrics and visualization tools.
+
+---
+
+## 📌 Project Objectives
+
+- Predict the presence of heart disease using medical and demographic features.
+- Improve model performance using techniques like SMOTE, hyperparameter tuning, and ensemble learning.
+- Visualize model performance using ROC curves, confusion matrices, and feature importance plots.
+
+---
+
+## 🧾 Dataset
+
+- **Source:** Framingham Heart Study (or similar)
+- **Rows:** ~4,000 samples
+- **Target Variable:** `TenYearCHD` (Binary: 0 = No disease, 1 = Disease)
+
+---
+
+## ⚙️ Technologies Used
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- Scikit-learn
+- XGBoost
+- SMOTE (Imbalanced-learn)
+- GridSearchCV
+- Jupyter Notebook
+
+---
+
+## 🔄 Workflow
+
+1. Data Cleaning and Preprocessing
+2. Feature Scaling (StandardScaler)
+3. Imbalance Handling (SMOTE)
+4. Model Training:
+   - Logistic Regression
+   - Random Forest
+5. Evaluation:
+   - Accuracy, Precision, Recall, F1 Score
+   - ROC Curve and AUC
+6. Feature Importance Analysis
+
+---
+
+## 📈 Results Summary
+
+| Model               | Accuracy | Precision | Recall | F1 Score | AUC   |
+|---------------------|----------|-----------|--------|----------|-------|
+| Logistic Regression | 0.72     | 0.78      | 0.65   | 0.71     | 0.78  |
+| Random Forest       | 0.77     | 0.81      | 0.69   | 0.74     | 0.82  |
+
+---
+
+## 📊 Key Takeaways
+
+- SMOTE significantly improved recall for all models.
+- Top contributing features: `age`, `cigsPerDay`, `sysBP`, `glucose`, `BMI`, `totChol`.
+
+---
+
+## 🚀 Future Improvements
+
+- Threshold tuning for better class balance
+- Recursive Feature Elimination for model simplification
+- Deployment using Flask/Streamlit
+- Cross-validation with stratified K-folds
+
+---
+
+## 🧠 Author
+
+- **Shibaditya Tripathy** – [GitHub Profile](https://github.com/Shibaditya00)
+
+---
+
+## 📎 License
+
+This project is licensed under the MIT License.
